@@ -9,11 +9,25 @@
     .header{
         padding: 0 80px;
     }
+    .page__cell{
+        max-width: 1435px;
+    }
+    .slider__item {
+        width: 42.125rem;
+        height: 35.875rem;
+    }
+
+
 }
 @media screen and (max-width:1680px){
     html {
         font-size: 85%;
     }
+
+    .page__cell{
+        max-width: 1353px;
+    }
+   
 
 }
 @media screen and (max-width:1430px){
@@ -26,6 +40,22 @@
         font-size: 75%;
     }
 }
+
+@media screen and (max-width: 1202px){
+    .section5__card-item-img{
+        height: 41rem;
+    }
+    .section5__card-item{
+        width: 26rem;
+    }
+    .section5__card-item-img{
+        height: 35rem;
+    } 
+    .section5__card-item{
+        height: 36rem;
+    }
+}
+
 @media screen and (max-width:1130px) {
     html {
         font-size: 60%;
@@ -33,6 +63,8 @@
     .header {
         padding: 0 80px 0 0;
     }
+
+  
     /***********************************/
     /*.tablet {
         display: flex;
@@ -168,14 +200,16 @@
         width: 417px;
         margin: 0;
     }
-    #customers-testimonials .item{
+    /* #customers-testimonials .item{
         margin: 0;
-    }
+    } */
     .owl-item{
         width: 417px;
     }
     .slider__item{
         margin:0 20px 0 35px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .section5__card{
         display: none;
@@ -245,7 +279,9 @@
         width: 345px;
     }
     .slider__item {
-        margin: 0 10px 0 5px;
+        /* margin: 0 10px 0 5px; */
+        margin-left: auto;
+        margin-right: auto;
     }
     .page__cell-content--section7{
         margin: 0 auto;
@@ -316,8 +352,33 @@
         margin-top: 1rem
     }
 
+    .content__left-bottom{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     /*каусель*/
+
+
+    video{
+        width: 100%;
+    }
 }
+
+
+@media screen and (max-width: 630px){
+    /* .slider__item{
+        width: 100%;
+    } */
+}
+
+@media (max-width: 767px){
+    .slider__item{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width:550px){
     #nav{
         display: none;
@@ -502,9 +563,11 @@
         width: 350px;
     }
     #customers-testimonials .item{
+ 
         width: 100%;
         margin-top: 20px;
         padding: 0;
+  
     }
     .hallucination__headline {
         margin-top: 7.75rem;
