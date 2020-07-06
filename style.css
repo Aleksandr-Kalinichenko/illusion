@@ -262,6 +262,14 @@ a{
     margin-top: 2rem;
 }
 /*зайчик*/
+.raiting-icone__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+}
+
 .raiting-icone,
 .spacial-raiting{
     position: relative;
