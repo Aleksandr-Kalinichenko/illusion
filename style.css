@@ -593,8 +593,6 @@ input:checked + .li > label { display: block; }
     margin: 0 auto;
 }
 .slider__item{
- 
-
     width: 48.125rem;
     height: 42.875rem;
     margin:0 20px 0 35px;
@@ -628,51 +626,67 @@ input:checked + .li > label { display: block; }
     text-transform: uppercase;
     letter-spacing: .2em;
 }
-.slider .owl-dot span {
-    background-color: #C0C0C0;
-    height: 1rem;
-    width: 4px;
-    display: block;
+.page__row.slider-wrap {
+    margin-bottom: 30px;
 }
-.slider .owl-dot.active span{
-    height: 1.5rem;
-    width: 5px;
-    background: #4f4f4f;
+.slick-slide img {
+    height: 100%;
 }
-.slider .owl-dot {
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.slick-list {
+    overflow: visible;
+}
+.slick-dots {
+    position: static;
+    margin-top: 30px;
+}
+.slick-dots li {
+    position: relative;
     display: inline-block;
-    margin: 0 0.40625rem;
+    width: 31px;
+    height: 5px;
+    margin: 0 5px;
+    background: #bbb;
+    padding: 0;
+    cursor: pointer;
 }
-.slider .owl-dots {
-    display: flex;
-    width: 18rem;
-    margin: 3.5rem auto;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+.slick-dots li button:before{
+    display: none;
 }
-.owl-carousel .owl-nav {
-    color: #000;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
+.slick-dots li button{
+    width: 0;
+    height: 0;
 }
-.owl-prev{
-    background-image: url("img/back.png");
+li.slick-active {
+    background: #3b5998;
+}
+.slick-next {
+    right: 3%;
+    background-image: url(img/next.png);
     background-size: cover;
-    width: 4.75rem;
-    height: 4.75rem;
 }
-.owl-next{
-    background-image: url("img/next.png");
+.slick-prev:before, .slick-next:before{
+    font-size: 60px;
+}
+.slick-prev, .slick-next {
+    width: 50px;
+    height: 50px;
+    opacity: .3;
+    transition: opacity .3s;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    opacity: 1;
+}
+
+.slick-prev {
+    left: 3%;
+    z-index: 100;
+    background-image: url(img/back.png);
     background-size: cover;
-    width: 4.75rem;
-    height: 4.75rem;
 }
 /*SECTION4*/
 /*SECTION5*/

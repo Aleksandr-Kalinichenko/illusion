@@ -224,9 +224,8 @@
         width: 417px;
     }
     .slider__item{
-        margin:0 20px 0 35px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 10px 0 5px;
+        height: 300px;
     }
     .section5__card{
         display: none;
@@ -296,9 +295,7 @@
         width: 345px;
     }
     .slider__item {
-        /* margin: 0 10px 0 5px; */
-        margin-left: auto;
-        margin-right: auto;
+         margin: 0 10px 0 5px;
     }
     .page__cell-content--section7{
         margin: 0 auto;
@@ -460,7 +457,6 @@
     }
     .slider__item{
         width: 100%;
-        margin: 0 auto;
     }
     .block__img {
         width: 45%;
@@ -609,5 +605,11 @@
     .spacial-raiting{
         width: 90px;
         margin: 0 15px 10px 15px;
+    }
+}
+
+@media (max-width: 326px) {
+    .slick-dots {
+        white-space: nowrap;
     }
 }

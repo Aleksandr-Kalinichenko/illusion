@@ -177,48 +177,23 @@ jQuery(document).ready(function($) {
         }
     });
 });
-$(document).ready(function(){
-    $(".slider").owlCarousel({
-        items: 2,
-        loop: true,
-        center: true,
-        autoplay: false,
-        stagePadding: 0,
-        nav:true,
-        navText : ["",""],
-        pagination : true,
-        smartSpeed: 1500,
-        autoplayTimeout: 6000,
-        // margin: 15,
-        responsive:{
-            0:{
-                items: 1,
-                // stagePadding: 0
-            },
-            550:{
-                items: 1
-                // stagePadding: 10
-            },
-            // 630: {
-            //     items: 1
-            // },
-            768:{
-                stagePadding: 40,
-            },
-            940:{
-                stagePadding: 10
-            },
-            1025:{
-                stagePadding: 20
-            },
-            1440:{
-                stagePadding: 0
-            },
-            1540:{
-                
+$('.slider').slick({
+    autoplay: false,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    centerPadding: '8.5rem',
+    centerMode: false,
+    dots: true,
+    arrows: true,
+    responsive:[
+        {
+            breakpoint: 670,
+            settings:{
+                slidesToShow: 1
             }
         }
-    });
+    ]
 });
 
 //wave
