@@ -401,6 +401,7 @@ video {
     text-align: center;
     letter-spacing: 0.15em;
     margin-bottom: 6rem;
+    margin-top: 2rem;
 }
 .gallery{
     display: flex;
@@ -589,8 +590,8 @@ input:checked + .li > label { display: block; }
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.15em;
-    margin-top: 10rem;
     margin-bottom: 6rem;
+    margin-top: 2rem;
 }
 .page__cell-hallucination{
     margin: 0 auto;
@@ -621,8 +622,8 @@ input:checked + .li > label { display: block; }
     top:0;
     right: 0;
     bottom: 0;
-    padding: 2.375rem;
-    font-size: 1.25rem;
+    padding: 1.375rem;
+    font-size: 0.8rem;
     line-height: 1.2;
     text-align: left;
     letter-spacing: .075em;
@@ -630,7 +631,7 @@ input:checked + .li > label { display: block; }
 .span-heading{
     display: inline-block;
     padding-bottom: 2rem;
-    font-size: 2.125rem;
+    font-size: 1.125rem;
     text-transform: uppercase;
     letter-spacing: .2em;
 }
@@ -639,6 +640,9 @@ input:checked + .li > label { display: block; }
 }
 .slick-slide img {
     height: 100%;
+}
+.slick-initialized .slick-slide {
+    height: 280px;
 }
 .slick-dotted.slick-slider {
     margin-bottom: 0;
@@ -703,11 +707,12 @@ li.slick-active {
     text-transform: uppercase;
     line-height: 0.6;
     text-align: center;
-    margin: 2rem;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
 }
 .section5__card{
     width: 100%;
-    height: 53rem;
+    height: 50rem;
     display: flex;
     justify-content: space-between;
     /*margin-top: 4.3125rem;*/
@@ -905,7 +910,7 @@ li.slick-active {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 7rem;
+    margin-top: 6rem;
 }
 .section__info-block1{
     width: 49%;

@@ -1,6 +1,20 @@
+@media (max-width: 2048px) {
+    .page__row {
+        max-width: 2048px;
+    }
+
+    .page__cell {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 1920px){
     .content__left-bottom{
         max-width: 408px;
+    }
+
+    .page__row {
+        max-width: 1920px;
     }
 }
 
@@ -506,6 +520,9 @@
     }
     .content__left-bottom{
         flex-wrap: wrap;
+    }
+    .section__card-headline {
+        line-height: 25px;
     }
 }
 @media screen and (max-width:480px){

@@ -180,13 +180,26 @@ jQuery(document).ready(function($) {
 $('.slider').slick({
     autoplay: false,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 4,
     slidesToScroll: 1,
     centerPadding: '8.5rem',
     centerMode: false,
     dots: true,
     arrows: true,
     responsive:[
+        {
+            breakpoint: 940,
+            settings:{
+                slidesToShow: 3
+            }
+        },
+
+        {
+            breakpoint: 840,
+            settings:{
+                slidesToShow: 2
+            }
+        },
         {
             breakpoint: 670,
             settings:{
