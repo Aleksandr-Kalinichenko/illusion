@@ -648,7 +648,7 @@ input:checked + .li > label { display: block; }
     margin-bottom: 0;
 }
 .slick-list {
-    overflow: visible;
+    overflow: hidden;
 }
 .slick-dots {
     position: static;
