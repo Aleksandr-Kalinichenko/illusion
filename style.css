@@ -720,7 +720,7 @@ li.slick-active {
 .section5__card-item{
     position: relative;
     width: 31rem;
-    height: 41rem;
+    height: 36rem;
 }
 .section5__card-item-img{
     padding-top: .75rem;
@@ -792,6 +792,7 @@ li.slick-active {
 }
 .back {
     position: relative;
+    overflow: hidden;
 }
 .back:hover::after {
     position: absolute;
