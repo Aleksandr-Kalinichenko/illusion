@@ -6,6 +6,12 @@
     .page__cell {
         max-width: 100%;
     }
+    .content__right {
+        width: 60%;
+    }
+    .slick-initialized .slick-slide {
+        height: 370px;
+    }
 }
 
 @media (max-width: 1920px){
@@ -36,8 +42,12 @@
         width: 42.125rem;
         height: 35.875rem;
     }
-
-
+    .content__right {
+        width: 60rem;
+    }
+    .slick-initialized .slick-slide {
+        height: 280px;
+    }
 }
 @media screen and (max-width:1680px){
     html {
