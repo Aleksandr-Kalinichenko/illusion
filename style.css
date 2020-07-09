@@ -629,7 +629,7 @@ input:checked + .li > label { display: block; }
 .span-heading{
     display: inline-block;
     padding-bottom: 2rem;
-    font-size: 1.125rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .2em;
 }
