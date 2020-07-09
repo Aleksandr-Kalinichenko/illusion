@@ -328,7 +328,6 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 26px;
 }
 .tablet{
     display: none;
@@ -400,8 +399,7 @@ video {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.15em;
-    margin-bottom: 6rem;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 .gallery{
     display: flex;
@@ -415,6 +413,9 @@ video {
     width: 100%;
     margin-bottom: 2rem;
     cursor: pointer;
+}
+.item:nth-last-of-type(1) {
+    margin: 0;
 }
 /*popup*/
 .overlay {
@@ -570,7 +571,6 @@ input:checked + .li > label { display: block; }
     text-align: center;
     padding: 20px;
     /*margin-bottom:80px;*/
-    opacity: .2;
     -webkit-transform: scale3d(0.8, 0.8, 1);
     transform: scale3d(0.8, 0.8, 1);
     transition: all 0.3s ease-in-out;
@@ -590,8 +590,7 @@ input:checked + .li > label { display: block; }
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.15em;
-    margin-bottom: 6rem;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 .page__cell-hallucination{
     margin: 0 auto;
@@ -602,9 +601,8 @@ input:checked + .li > label { display: block; }
     margin: 0 auto;
 }
 .slider__item{
-    width: 48.125rem;
-    height: 42.875rem;
-    margin:0 20px 0 35px;
+    margin: 0 36px 0 0;
+    min-width: 301px !important;
     position: relative;
 }
 .slider__item-img{
@@ -616,13 +614,13 @@ input:checked + .li > label { display: block; }
 }
 .hidden{
     overflow-x: hidden;
-    width: 50%;
+    width: 59%;
     background-color: rgba(239, 239, 239, 0.7);
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     bottom: 0;
-    padding: 1.375rem;
+    padding: 1rem;
     font-size: 0.8rem;
     line-height: 1.2;
     text-align: left;
@@ -685,7 +683,7 @@ li.slick-active {
 .slick-prev, .slick-next {
     width: 50px;
     height: 50px;
-    opacity: .7;
+    opacity: .9;
     transition: opacity .3s;
 }
 
@@ -700,6 +698,9 @@ li.slick-active {
     background-image: url(img/back.png);
     background-size: cover;
 }
+.slick-track {
+    min-width: 2387px !important;
+}
 /*SECTION4*/
 /*SECTION5*/
 .section__card-headline{
@@ -707,8 +708,8 @@ li.slick-active {
     text-transform: uppercase;
     line-height: 0.6;
     text-align: center;
-    margin-bottom: 6rem;
     margin-top: 2rem;
+    margin-bottom: 6rem;
 }
 .section5__card{
     width: 100%;
@@ -716,6 +717,10 @@ li.slick-active {
     display: flex;
     justify-content: space-between;
     /*margin-top: 4.3125rem;*/
+}
+.card-logo {
+    width: initial;
+    height: 67.2px;
 }
 .section5__card-item{
     position: relative;
@@ -735,7 +740,9 @@ li.slick-active {
 }
 .micro-logo{
     margin: 0.35rem auto .85rem auto;
-    width: 10.3125rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .axe-logo {
     margin: 0 auto;
@@ -746,7 +753,7 @@ li.slick-active {
     width: 8rem;
 }
 .section5__card-item-link{
-    font-size: 1.625rem;
+    font-size: 1.2rem;
     line-height: 1.2;
     text-align: center;
     position: absolute;
@@ -781,6 +788,7 @@ li.slick-active {
 
 .card-block:hover .side{
     box-shadow: -36px 18px 16px 0 rgba(0, 0, 0,.8); /*при наведении на блок с картой, для видимой стороны карты задается тень*/
+    border: 1px solid #7a7a7a;
 }
 
 .side {
@@ -971,7 +979,7 @@ li.slick-active {
     width: 47%;
 }
 .block1__right-link{
-    font-size: 1.5625rem;
+    font-size: 1.2rem;
     text-align: left;
     padding-bottom: .3125rem;
     line-height: 1;
@@ -1014,7 +1022,7 @@ li.slick-active {
 }
 .block21__right-link{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5625rem;
+    font-size: 1.2rem;
     text-align: left;
     padding-bottom: .3125rem;
     line-height: 1;
@@ -1031,7 +1039,7 @@ li.slick-active {
     font-weight: 700;
 }
 .block22__right-link{
-    font-size: 1.5625rem;
+    font-size: 1.2rem;
     text-align: left;
     padding-bottom: .3125rem;
     line-height: 1;
@@ -1147,7 +1155,7 @@ footer{
 .maplink{
     color: #000;
     font-size: 1.25rem;
-    line-height: .8;
+    line-height: 1.2;
     letter-spacing: 0.1em;
 }
 

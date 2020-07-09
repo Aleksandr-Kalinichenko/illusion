@@ -179,7 +179,7 @@ jQuery(document).ready(function($) {
 });
 $('.slider').slick({
     autoplay: false,
-    infinite: true,
+    infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     centerPadding: '8.5rem',
@@ -190,20 +190,23 @@ $('.slider').slick({
         {
             breakpoint: 940,
             settings:{
-                slidesToShow: 3
+                slidesToShow: 3,
+                infinite: true
             }
         },
 
         {
             breakpoint: 840,
             settings:{
-                slidesToShow: 2
+                slidesToShow: 2,
+                infinite: true
             }
         },
         {
             breakpoint: 670,
             settings:{
-                slidesToShow: 1
+                slidesToShow: 1,
+                infinite: true
             }
         }
     ]

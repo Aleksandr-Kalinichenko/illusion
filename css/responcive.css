@@ -94,8 +94,18 @@
     .content__left-bottom{
         max-width: 298px;
     }
+    .slider__item {
+        min-width: initial !important;
+        margin: 0 20px 0 35px !important;
+    }
+    .hidden {
+        width: 50%;
+    }
+    .span-heading {
+        font-size: .9rem;
+    }
 
-  
+
     /***********************************/
     /*.tablet {
         display: flex;
@@ -218,7 +228,6 @@
         width: auto;
     }
     .gallery__headline{
-        margin: 0;
         font-size: 27px;
     }
     .desktop{
@@ -330,9 +339,6 @@
         margin-left: auto;
     }
     /*каусель*/
-    .section6__headline {
-        padding-bottom: 0;
-    }
     .tablet{
         display: block;
         padding-bottom: 5rem;
@@ -622,6 +628,12 @@
     .spacial-raiting{
         width: 90px;
         margin: 0 15px 10px 15px;
+    }
+}
+
+@media (max-width: 359px) {
+    .span-heading {
+        font-size: 11px;
     }
 }
 
