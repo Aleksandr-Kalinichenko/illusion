@@ -709,7 +709,8 @@ input:checked + .li > label { display: block; }
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.15em;
-    margin: 2rem 0;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 .page__cell-hallucination{
     margin: 0 auto;
@@ -829,8 +830,8 @@ li.slick-active {
     text-transform: uppercase;
     line-height: 0.6;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 .section5__card{
     width: 100%;
@@ -849,6 +850,8 @@ li.slick-active {
 }
 .cardImg {
     height: 88%;
+    width: 101%;
+    margin-left: -1px;
 }
 .section5__card-item{
     position: relative;
@@ -951,6 +954,7 @@ li.slick-active {
 .back {
     position: relative;
     overflow: hidden;
+    font-size: 0;
 }
 .back:hover::after {
     position: absolute;

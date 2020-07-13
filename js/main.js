@@ -205,6 +205,13 @@ $('.slider').slick({
         {
             breakpoint: 790,
             settings:{
+                slidesToShow: 1.5,
+                infinite: true
+            }
+        },
+        {
+            breakpoint: 550,
+            settings:{
                 slidesToShow: 1,
                 infinite: true
             }

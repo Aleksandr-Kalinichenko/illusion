@@ -12,6 +12,13 @@
     .slick-initialized .slick-slide {
         height: 370px;
     }
+    .section5__card {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .aboutus__right {
+        width: 48.5rem;
+    }
 }
 
 @media (max-width: 1920px){
@@ -21,6 +28,12 @@
 
     .page__row {
         max-width: 1920px;
+    }
+    .section5__card {
+        width: 100%;
+    }
+    .aboutus__right {
+        width: 46%;
     }
 }
 
@@ -409,8 +422,6 @@
         width: 100%;
     }
 }
-
-
 @media screen and (max-width: 630px){
     /* .slider__item{
         width: 100%;
@@ -644,6 +655,12 @@
 @media (max-width: 359px) {
     .span-heading {
         font-size: 11px;
+    }
+}
+
+@media (max-width: 340px) {
+    .span-heading {
+        font-size: 9px;
     }
 }
 
