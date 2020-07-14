@@ -919,7 +919,10 @@ li.slick-active {
 .card-block {
     -webkit-transition: box-shadow .5s ease, transform .5s ease;
     -o-transition: box-shadow .5s ease, transform .5s ease;
+    -webkit-transition: -webkit-box-shadow .5s ease, -webkit-transform .5s ease;
+    transition: -webkit-box-shadow .5s ease, -webkit-transform .5s ease;
     transition: box-shadow .5s ease, transform .5s ease;
+    transition: box-shadow .5s ease, transform .5s ease, -webkit-box-shadow .5s ease, -webkit-transform .5s ease;
     cursor: pointer;
     /*transform: scale(.90);*/
     -webkit-perspective: 500px;
@@ -1064,7 +1067,6 @@ li.slick-active {
     line-height: 1;
     text-align: center;
     margin-bottom: 3rem;
-    margin-top: 5rem;
 }
 /*.tablet{
     display: none;
