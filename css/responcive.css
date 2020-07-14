@@ -72,6 +72,9 @@
     .section5__card {
         height: 40rem;
     }
+    .section6__headline {
+        margin-top: 5rem;
+    }
     .section5__card-item-img{
         height: 41rem;
     }
