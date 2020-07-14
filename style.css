@@ -453,6 +453,9 @@ a{
 
 .img-replace {
     position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
 .visibility-video {
     visibility: hidden;
@@ -736,7 +739,7 @@ input:checked + .li > label { display: block; }
     top: 0;
     right: 0;
     bottom: 0;
-    padding: 6px;
+    padding: 8px;
     font-size: 1rem;
     line-height: 1.2;
     text-align: left;
@@ -746,7 +749,7 @@ input:checked + .li > label { display: block; }
 .span-heading{
     display: inline-block;
     padding-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     text-transform: uppercase;
     font-family: 'Noto Sans', sans-serif;
 }
