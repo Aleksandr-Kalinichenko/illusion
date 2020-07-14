@@ -14,7 +14,7 @@
     }
 }
 
-@media screen and (max-width:1870px){
+@media (max-width:1870px){
     html {
         font-size: 90%;
     }
@@ -29,8 +29,8 @@
         max-width: 1435px;
     }
     .slider__item {
-        width: 42.125rem;
-        height: 35.875rem;
+        width: 40.125rem;
+        height: 33.875rem;
     }
     .content__right {
         width: 60rem;
@@ -70,22 +70,22 @@
 
 @media screen and (max-width: 1202px){
     .section5__card {
-        height: 40rem;
-    }
-    .section6__headline {
-        margin-top: 5rem;
+        height: 44rem;
     }
     .section5__card-item-img{
-        height: 41rem;
+        height: 45rem;
     }
     .section5__card-item{
-        width: 26rem;
+        width: 30rem;
     }
     .section5__card-item-img{
-        height: 35rem;
+        height: 39rem;
     } 
     .section5__card-item{
-        height: 36rem;
+        height: 40rem;
+    }
+    .section5__card-item-link {
+        bottom: 2.5rem;
     }
 }
 
@@ -164,7 +164,23 @@
     .block1__right-link{
         margin-top: 25px;
     }*/
+    .section5__card-item {
+        width: 31rem;
+    }
 }
+
+@media (max-width: 1020px) {
+    .section5__card-item {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .section5__card-item {
+        width: 28rem;
+    }
+}
+
 /***********************************/
 @media screen and (max-width:940px){
     .header {
@@ -272,9 +288,6 @@
     .tablet{
         display: block;
         height: 230px;
-    }
-    .section6__headline{
-        margin-top: 5rem;
     }
     .block__img{
         width: 226px;
