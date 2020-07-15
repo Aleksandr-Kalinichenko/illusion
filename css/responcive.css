@@ -276,7 +276,7 @@
         display: none;
     }
     .icon-cards{
-        touch-action: none; 
+        touch-action: none;
     }
     .section5__card-item-link{
         bottom: -0.5rem;
@@ -297,7 +297,7 @@
     .block__text-text{
         font-size: 13px;
     }
-    
+
     .hidden{
         font-size: 11px;
     }
@@ -426,6 +426,12 @@
 @media (max-width: 767px){
     .slider__item{
         width: 100%;
+    }
+}
+
+@media (max-width: 705px) {
+    .gallery__headline {
+        margin-bottom: -15px;
     }
 }
 
