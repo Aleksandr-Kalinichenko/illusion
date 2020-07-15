@@ -182,6 +182,9 @@
 
 /***********************************/
 @media screen and (max-width:940px){
+    .section6__headline {
+        margin-top: 5rem;
+    }
     .header {
         padding: 0!important;
     }
