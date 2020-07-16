@@ -190,14 +190,7 @@ $('.slider').slick({
         {
             breakpoint: 940,
             settings:{
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 800,
-            settings:{
-                slidesToShow: 2,
-                infinite: true
+                slidesToShow: 2
             }
         },
         {
