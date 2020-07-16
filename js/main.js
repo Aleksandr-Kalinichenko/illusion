@@ -203,7 +203,7 @@ $('.slider').slick({
         {
             breakpoint: 790,
             settings:{
-                slidesToShow: 2,
+                slidesToShow: 1.5,
                 infinite: true
             }
         },
