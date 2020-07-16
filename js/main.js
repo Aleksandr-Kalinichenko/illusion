@@ -188,13 +188,13 @@ $('.slider').slick({
     arrows: true,
     responsive:[
         {
-            breakpoint: 1100,
+            breakpoint: 940,
             settings:{
                 slidesToShow: 3
             }
         },
         {
-            breakpoint: 950,
+            breakpoint: 800,
             settings:{
                 slidesToShow: 2,
                 infinite: true
@@ -203,7 +203,7 @@ $('.slider').slick({
         {
             breakpoint: 790,
             settings:{
-                slidesToShow: 1.5,
+                slidesToShow: 2,
                 infinite: true
             }
         },

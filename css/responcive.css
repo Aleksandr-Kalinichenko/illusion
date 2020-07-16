@@ -100,10 +100,10 @@
     .content__left-bottom{
         max-width: 298px;
     }
-    .slider__item {
-        min-width: initial !important;
-        margin: 0 20px 0 35px !important;
-    }
+    /*.slider__item {*/
+    /*    min-width: initial !important;*/
+    /*    margin: 0 20px 0 35px !important;*/
+    /*}*/
     .hidden {
         width: 50%;
     }
@@ -193,7 +193,6 @@
     }
     #customers-testimonials {
         width: 100%;
-        height: 3114px;
     }
     .page__cell-content{
         display: none;
@@ -261,8 +260,9 @@
     .desktop{
         display: none;
     }
-    #customers-testimonials{
-        display: block;
+    #customers-testimonials {
+        display: flex;
+        flex-wrap: wrap;
     }
     .item{
         width: 417px;
@@ -544,9 +544,6 @@
     }
     .content__left-bottom{
         flex-wrap: wrap;
-    }
-    #customers-testimonials {
-        height: 3439px;
     }
 }
 @media screen and (max-width:480px){
