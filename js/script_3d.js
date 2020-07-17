@@ -1,9 +1,15 @@
 // You can change global variables here:
-var radius = 110; // how big of the radius
+var radius = 250; // how big of the radius
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -10; // unit: seconds/360 degrees
 var imgWidth = 180; // width of images (unit: px)
 var imgHeight = 273; // height of images (unit: px)
+
+if (document.documentElement.clientWidth <= 460 && document.documentElement.clientWidth > 400) {
+  radius = 180;
+} else if (document.documentElement.clientWidth <= 400) {
+  radius = 110;
+}
 
 
 // ===================== start =======================
