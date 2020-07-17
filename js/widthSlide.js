@@ -27,11 +27,53 @@ function setWidthHeightSlides() {
             item.style.height = galleryImg.clientHeight + "px";
             item.style.marginRight = marginForSliderItem + "px";
         });
-    } else {
+    } else if (document.documentElement.clientWidth >= 729) {
+        const
+            customersItem = document.querySelector("#customers-testimonials .item"),
+            customersWidth = document.getElementById("customers-testimonials").clientWidth,
+            customersJsBtn1 = document.querySelector("#customers-testimonials .item.js-button1"),
+            customersJsBtn2 = document.querySelector("#customers-testimonials .item.js-button2");
+
         allSliderItem.forEach(item => {
-            item.style.minHeight = item.clientWidth + "px";
-            item.style.height = item.clientWidth + "px";
-            item.style.maxHeight = item.clientWidth + "px";
+            let widthAllCustomersItems = 0;
+
+            widthAllCustomersItems += customersJsBtn1.clientWidth;
+            widthAllCustomersItems += customersJsBtn2.clientWidth;
+
+            let marginForSliderItem = (customersWidth - widthAllCustomersItems)/4;
+
+            item.style.minWidth = customersItem.clientWidth + "px";
+            item.style.maxWidth = customersItem.clientWidth + "px";
+            item.style.height = customersItem.clientHeight + "px";
+            item.style.marginLeft = marginForSliderItem + "px";
+            item.style.marginRight = marginForSliderItem + "px";
+        });
+    } else {
+
+        const
+            customersItem = document.querySelector("#customers-testimonials .item"),
+            customersWidth = document.getElementById("customers-testimonials").clientWidth,
+            customersJsBtn1 = document.querySelector("#customers-testimonials .item.js-button1");
+
+        allSliderItem.forEach(item => {
+            let marginForSliderItem = (customersWidth - customersJsBtn1.clientWidth) / 2;
+
+            console.log(marginForSliderItem);
+
+            item.style.minWidth = customersItem.clientWidth + "px";
+            item.style.maxWidth = customersItem.clientWidth + "px";
+            item.style.height = customersItem.clientHeight + "px";
+            item.style.marginLeft = marginForSliderItem + "px";
+            item.style.marginRight = marginForSliderItem + "px";
+
+            // if (document.documentElement.clientWidth <= 450 && document.documentElement.clientWidth > 340) {
+            // } else if (document.documentElement.clientWidth <= 340) {
+            //     item.style.marginLeft = marginForSliderItem + "px";
+            //     item.style.marginRight = marginForSliderItem + "px";
+            // } else {
+            //     item.style.marginLeft = marginForSliderItem + "px";
+            //     item.style.marginRight = marginForSliderItem + "px";
+            // }
         });
     }
 }

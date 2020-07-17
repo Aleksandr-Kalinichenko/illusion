@@ -684,13 +684,9 @@ input:checked + .li > label { display: block; }
     width: 500px;
 }*/
 #customers-testimonials .item {
-    margin: 0 auto;
+    margin: 35px auto 0 auto;
     text-align: center;
     /*margin-bottom:80px;*/
-    -webkit-transform: scale3d(0.8, 0.8, 1);
-    transform: scale3d(0.8, 0.8, 1);
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 #customers-testimonials .owl-item.active.center .item {
@@ -760,6 +756,7 @@ input:checked + .li > label { display: block; }
 }
 .slick-list {
     overflow: hidden;
+    width: 101%;
 }
 .slick-dots {
     position: static;
@@ -815,6 +812,7 @@ li.slick-active {
 }
 .slick-track {
     min-width: 2387px !important;
+    display: flex;
 }
 /*SECTION4*/
 /*SECTION5*/

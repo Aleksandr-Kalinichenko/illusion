@@ -194,19 +194,25 @@ $('.slider').slick({
             }
         },
         {
-            breakpoint: 790,
+            breakpoint: 730,
             settings:{
-                slidesToShow: 1.5,
-                infinite: true
+                slidesToShow: 1
             }
-        },
-        {
-            breakpoint: 550,
-            settings:{
-                slidesToShow: 1,
-                infinite: true
-            }
-        }
+        }//,
+        // {
+        //     breakpoint: 650,
+        //     settings:{
+        //         slidesToShow: 1.5,
+        //         infinite: true
+        //     }
+        // },
+        // {
+        //     breakpoint: 500,
+        //     settings:{
+        //         slidesToShow: 1,
+        //         infinite: true
+        //     }
+        // }
     ]
 });
 
