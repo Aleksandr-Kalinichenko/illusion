@@ -762,11 +762,11 @@
     }
 
     .content__left-headline {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .content__left-headline span {
-        font-size: 40px;
+        font-size: 36px;
     }
 }
 
@@ -960,11 +960,11 @@
 
 @media (max-width: 375px) {
     .content__left-headline {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .content__left-headline span {
-        font-size: 36px;
+        font-size: 34px;
     }
 }
 
