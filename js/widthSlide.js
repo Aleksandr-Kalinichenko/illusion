@@ -60,16 +60,12 @@ function setWidthHeightSlides() {
             item.style.maxWidth = customersItem.clientWidth + "px";
             item.style.height = customersItem.clientHeight + "px";
             item.style.marginLeft = marginForSliderItem + "px";
-            item.style.marginRight = marginForSliderItem + "px";
 
-            // if (document.documentElement.clientWidth <= 450 && document.documentElement.clientWidth > 340) {
-            // } else if (document.documentElement.clientWidth <= 340) {
-            //     item.style.marginLeft = marginForSliderItem + "px";
-            //     item.style.marginRight = marginForSliderItem + "px";
-            // } else {
-            //     item.style.marginLeft = marginForSliderItem + "px";
-            //     item.style.marginRight = marginForSliderItem + "px";
-            // }
+            if (document.documentElement.clientWidth >= 460) {
+                item.style.marginRight = marginForSliderItem + 5 + "px";
+            } else {
+                item.style.marginRight = marginForSliderItem + "px";
+            }
         });
     }
 }
