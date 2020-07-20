@@ -86,6 +86,9 @@ body {
     padding: 0 20px;
     max-width: 1630px;
 }
+.page__cell.posRel {
+    position: relative;
+}
 .img{
     width: 100%;
 }
@@ -719,6 +722,9 @@ input:checked + .li > label { display: block; }
     width: 100%;
     margin: 0 auto;
 }
+.slider.owl-carousel {
+    display: none;
+}
 .slider__item{
     margin: 0 36px 0 0;
     position: relative;
@@ -768,6 +774,7 @@ input:checked + .li > label { display: block; }
 .slick-dots {
     position: static;
     margin-top: 30px;
+    line-height: 12px;
 }
 .slick-dots li {
     position: relative;
