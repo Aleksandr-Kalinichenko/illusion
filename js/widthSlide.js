@@ -56,8 +56,6 @@ function setWidthHeightSlides() {
         allSliderItem.forEach(item => {
             let marginForSliderItem = (customersWidth - customersJsBtn1.clientWidth) / 2;
 
-            console.log(marginForSliderItem);
-
             item.style.minWidth = customersItem.clientWidth + "px";
             item.style.maxWidth = customersItem.clientWidth + "px";
             item.style.height = customersItem.clientHeight + "px";

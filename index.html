@@ -163,7 +163,7 @@
 </div>
 <!--SECTION1-->
 <!--SECTION2-->
-<div class="page__row">
+<div class="page__row aboutus__wrap">
     <div class="page__cell">
         <div class="page__cell-aboutus">
             <div class="aboutus__left">
@@ -1719,23 +1719,23 @@
                 <div class="section5__card-item-link"><a href="http://axerange.examplework.space/">Learn More</a></div>
             </div>
         </div>
-        <div class="icon-cards">
-				
-            <div id="drag-container">
-                <div id="spin-container">
-                  <a href="http://micro.examplework.space/">
-                    <img class="img3d" src="img/micro_card.png" alt="">
-                  </a>
-                  <a href="http://torture.examplework.space/">
-                    <img class="img3d" src="img/torture_card.png" alt="">
-                  </a>
-                  <a href="http://axerange.examplework.space/">
-                    <img class="img3d" src="img/axe_range.png" alt="">
-                  </a>
-                </div>
-                <div id="ground"></div>
-            </div>
-        </div>
+<!--        <div class="icon-cards">-->
+<!--				-->
+<!--            <div id="drag-container">-->
+<!--                <div id="spin-container">-->
+<!--                  <a href="http://micro.examplework.space/">-->
+<!--                    <img class="img3d" src="img/micro_card.png" alt="">-->
+<!--                  </a>-->
+<!--                  <a href="http://torture.examplework.space/">-->
+<!--                    <img class="img3d" src="img/torture_card.png" alt="">-->
+<!--                  </a>-->
+<!--                  <a href="http://axerange.examplework.space/">-->
+<!--                    <img class="img3d" src="img/axe_range.png" alt="">-->
+<!--                  </a>-->
+<!--                </div>-->
+<!--                <div id="ground"></div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </div>
 <!--SECTION5-->
@@ -1837,7 +1837,7 @@
                 <div class="block__img">
                     <picture>
                         <source class="img" srcset="img/img1.webp" type="image/webp">
-                        <img class="img" src="img/img1.png">
+                        <img class="img noFullHeight" src="img/img1.png">
                     </picture>
                 </div>
                 <div class="block__text">
@@ -1910,7 +1910,7 @@
                 <div class="block__img">
                     <picture>
                         <source class="img" srcset="img/img1.webp" type="image/webp">
-                        <img class="img" src="img/img1.png">
+                        <img class="img noFullHeight" src="img/img1.png">
                     </picture>
                 </div>
                 <div class="block__text">
@@ -2130,7 +2130,6 @@
             $('#wave3_down').css('height','55px');
             $('#wave2_down').css('height','55px');
             $('#wave1_down').css('height','55px');
-            console.log($(this).scrollTop());
         }
         if($(this).scrollTop() < 5200){
             $('#wave3_down').css('height','100px');
