@@ -770,6 +770,12 @@
     }
 }
 
+@media (max-width: 449px) {
+    .slick-dots li {
+        width: 21px;
+    }
+}
+
 @media screen and (max-width:480px){
     .tablet {
         height: 340px;
@@ -987,6 +993,12 @@
 
     .micro-logo {
         margin: 0 0 5px 0;
+    }
+}
+
+@media (max-width: 349px) {
+    .slick-dots li {
+        width: 18px;
     }
 }
 
