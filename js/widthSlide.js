@@ -61,7 +61,7 @@ function setWidthHeightSlides() {
             item.style.height = customersItem.clientHeight + "px";
             item.style.marginLeft = marginForSliderItem + "px";
 
-            if (document.documentElement.clientWidth >= 460) {
+            if (document.documentElement.clientWidth >= 460 && document.documentElement.clientWidth <= 540) {
                 item.style.marginRight = marginForSliderItem + 5 + "px";
             } else {
                 item.style.marginRight = marginForSliderItem + "px";

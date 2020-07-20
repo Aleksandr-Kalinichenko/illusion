@@ -734,11 +734,11 @@
 
 @media (max-width: 530px) {
     .section5__card-item {
-        width: 19rem;
+        width: 21rem;
     }
 
     .section5__card {
-        height: 33.8rem;
+        height: 35.8rem;
     }
 
     .card-logo {
@@ -882,13 +882,13 @@
     /*}*/
 }
 
-@media (max-width: 430px) {
+@media (max-width: 465px) {
     .section5__card-item {
-        width: 17rem;
+        width: 18rem;
     }
 
     .section5__card {
-        height: 31.8rem;
+        height: 32.8rem;
     }
 
     .section5__card-item-link {
