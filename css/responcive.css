@@ -768,6 +768,10 @@
     .content__left-headline span {
         font-size: 36px;
     }
+
+    .content__right-img {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width:480px){
@@ -965,6 +969,10 @@
 
     .content__left-headline span {
         font-size: 32px;
+    }
+
+    .content__right-img {
+        width: 60%;
     }
 }
 
