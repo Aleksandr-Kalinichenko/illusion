@@ -960,11 +960,11 @@
 
 @media (max-width: 375px) {
     .content__left-headline {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .content__left-headline span {
-        font-size: 34px;
+        font-size: 32px;
     }
 }
 
