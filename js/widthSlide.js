@@ -4,11 +4,12 @@ window.addEventListener("resize", setWidthHeightSlides);
 
 function setWidthHeightSlides() {
     const
+        customersItem = document.querySelector("#customers-testimonials .item"),
         galleryImg = document.querySelector(".gallery__items .item"),
         allSliderItem = document.querySelectorAll(".slider__item"),
         allGalleryItems = document.querySelectorAll(".gallery__items");
 
-    if (document.documentElement.clientWidth > 941) {
+    if (document.documentElement.clientWidth > 940) {
         const galleryDesktopWidth = document.querySelector(".gallery.desktop").clientWidth;
 
         allSliderItem.forEach(item => {
@@ -27,9 +28,8 @@ function setWidthHeightSlides() {
             item.style.height = galleryImg.clientHeight + "px";
             item.style.marginRight = marginForSliderItem + "px";
         });
-    } else if (document.documentElement.clientWidth >= 731) {
+    } else if (document.documentElement.clientWidth >= 730) {
         const
-            customersItem = document.querySelector("#customers-testimonials .item"),
             customersWidth = document.getElementById("customers-testimonials").clientWidth,
             customersJsBtn1 = document.querySelector("#customers-testimonials .item.js-button1"),
             customersJsBtn2 = document.querySelector("#customers-testimonials .item.js-button2");
@@ -49,9 +49,7 @@ function setWidthHeightSlides() {
             item.style.marginRight = marginForSliderItem + "px";
         });
     } else {
-
         const
-            customersItem = document.querySelector("#customers-testimonials .item"),
             customersWidth = document.getElementById("customers-testimonials").clientWidth,
             customersJsBtn1 = document.querySelector("#customers-testimonials .item.js-button1");
 

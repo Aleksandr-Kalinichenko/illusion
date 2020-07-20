@@ -188,13 +188,13 @@ $('.slider').slick({
     arrows: true,
     responsive:[
         {
-            breakpoint: 940,
+            breakpoint: 939,
             settings:{
                 slidesToShow: 2
             }
         },
         {
-            breakpoint: 730,
+            breakpoint: 729,
             settings:{
                 slidesToShow: 1
             }
