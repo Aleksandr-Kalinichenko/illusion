@@ -958,17 +958,19 @@
     }
 }
 
-@media (max-width: 350px) {
-    .aboutus__right {
-        height: 60rem;
-    }
-
+@media (max-width: 375px) {
     .content__left-headline {
         font-size: 24px;
     }
 
     .content__left-headline span {
         font-size: 36px;
+    }
+}
+
+@media (max-width: 350px) {
+    .aboutus__right {
+        height: 60rem;
     }
 
     .section5__card-item {

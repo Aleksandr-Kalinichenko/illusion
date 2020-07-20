@@ -414,6 +414,7 @@ a{
 }
 .tablet{
     display: none;
+    overflow: scroll !important;
 }
 .block__img img.img {
     height: 100%;
