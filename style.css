@@ -420,9 +420,6 @@ a{
     height: 100%;
 }
 
-.block__img img.img.noFullHeight {
-    height: initial;
-}
 .aboutus__left{
     width: 48%;
 }
