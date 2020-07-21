@@ -470,6 +470,10 @@
     .page__cell {
         padding: 0 20px;
     }
+
+    .section5__card.swiper-container {
+        width: 70%;
+    }
 }
 
 @media (max-width: 767px){
@@ -504,7 +508,7 @@
     }
 
     .content__left-headline span {
-        font-size: 45px;
+        font-size: 32px;
     }
 }
 
@@ -659,7 +663,10 @@
     }
 
     .content__left-headline span {
-        font-size: 24px;
+        font-size: 17px;
+    }
+    .section5__card.swiper-container {
+        width: 85%;
     }
 }
 
@@ -778,6 +785,9 @@
     .aboutus__right {
         height: 70rem;
     }
+    .section5__card.swiper-container {
+        width: 100%;
+    }
 }
 
 @media (max-width: 385px) {
@@ -830,7 +840,7 @@
     }
 
     .content__left-headline span {
-        font-size: 18px;
+        font-size: 13px;
     }
 }
 

@@ -852,8 +852,30 @@ li.slick-active {
 .section5__card.vDesktop {
     height: 46rem;
 }
+.swiper-button-next:after{
+    content: url("img/next.png");
+}
+
+.swiper-button-prev:after {
+    content: url("img/back.png");
+}
+
+.swiper-button-prev {
+    left: 30px;
+}
+
+.swiper-button-next {
+    right: 30px;
+}
+
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+    outline: none;
+}
+
 .section5__card.swiper-container {
     display: none;
+    width: 50%;
 }
 .section5__card.swiper-container .micro-logo {
     background: #fff;
