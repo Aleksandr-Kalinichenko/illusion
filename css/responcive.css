@@ -320,6 +320,7 @@
 
     .section5__card.swiper-container {
         display: block;
+        border: 1px solid burlywood;
     }
     .section5__card-item.swiper-slide {
         height: 100%;

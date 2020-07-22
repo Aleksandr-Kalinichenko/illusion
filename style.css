@@ -852,20 +852,42 @@ li.slick-active {
 .section5__card.vDesktop {
     height: 46rem;
 }
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    content: "dsdssad";
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.swiper-navigation {
+    height: 83%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 .swiper-button-next:after{
-    content: url("img/next.png");
+    background-image: url(img/next.png);
 }
 
 .swiper-button-prev:after {
-    content: url("img/back.png");
+    background-image: url(img/back.png);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
 }
 
 .swiper-button-prev {
-    left: 30px;
+    left: 20px;
 }
 
 .swiper-button-next {
-    right: 30px;
+    right: 20px;
 }
 
 .swiper-button-next:focus,
@@ -887,9 +909,9 @@ li.slick-active {
     border: none;
 }
 
+.section5__card.swiper-container .card-block .side,
 .section5__card.swiper-container .card-block:hover .side {
-    -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0,.4);
-            box-shadow: 0 0 5px 1px rgba(0, 0, 0,.4);
+        box-shadow: none;
 }
 .section5__card.swiper-container .card-block {
     background: #fff;
