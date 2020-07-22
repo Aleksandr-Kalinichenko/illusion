@@ -188,7 +188,7 @@ $('.slider').slick({
     arrows: true,
     responsive:[
         {
-            breakpoint: 939,
+            breakpoint: 940,
             settings:{
                 slidesToShow: 2
             }

@@ -42,11 +42,13 @@ function setWidthHeightSlides() {
 
             let marginForSliderItem = (customersWidth - widthAllCustomersItems)/4;
 
-            item.style.minWidth = customersItem.clientWidth + "px";
-            item.style.maxWidth = customersItem.clientWidth + "px";
-            item.style.height = customersItem.clientHeight + "px";
-            item.style.marginLeft = marginForSliderItem + "px";
-            item.style.marginRight = marginForSliderItem + "px";
+            setTimeout(() => {
+                item.style.minWidth = customersItem.clientWidth + "px";
+                item.style.maxWidth = customersItem.clientWidth + "px";
+                item.style.height = customersItem.clientHeight + "px";
+                item.style.marginLeft = marginForSliderItem + "px";
+                item.style.marginRight = marginForSliderItem + "px";
+            }, 100);
         });
     } else {
         const
@@ -56,6 +58,7 @@ function setWidthHeightSlides() {
         allSliderItem.forEach(item => {
             let marginForSliderItem = (customersWidth - customersJsBtn1.clientWidth) / 2;
 
+            setTimeout(() => {
             item.style.minWidth = customersItem.clientWidth + "px";
             item.style.maxWidth = customersItem.clientWidth + "px";
             item.style.height = customersItem.clientHeight + "px";
@@ -72,6 +75,7 @@ function setWidthHeightSlides() {
             } else {
                 item.style.marginRight = marginForSliderItem + "px";
             }
+            }, 100);
         });
     }
 }
