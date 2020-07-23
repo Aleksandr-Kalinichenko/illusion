@@ -67,10 +67,12 @@ function setWidthHeightSlides() {
             if (document.documentElement.clientWidth > 700 && document.documentElement.clientWidth <= 729) {
                 item.style.marginRight = marginForSliderItem + 7 + "px";
             } else if (document.documentElement.clientWidth > 650 && document.documentElement.clientWidth <= 700) {
-                item.style.marginRight = marginForSliderItem + 6.5 + "px";
+                item.style.marginRight = marginForSliderItem + 6.6 + "px";
             } else if (document.documentElement.clientWidth > 540 && document.documentElement.clientWidth <= 650) {
                 item.style.marginRight = marginForSliderItem + 6 + "px";
-            } else if (document.documentElement.clientWidth >= 460 && document.documentElement.clientWidth <= 540) {
+            } else if (document.documentElement.clientWidth > 500 && document.documentElement.clientWidth <= 540) {
+                item.style.marginRight = marginForSliderItem + 5.1 + "px";
+            } else if (document.documentElement.clientWidth > 460 && document.documentElement.clientWidth <= 500) {
                 item.style.marginRight = marginForSliderItem + 5 + "px";
             } else {
                 item.style.marginRight = marginForSliderItem + "px";
