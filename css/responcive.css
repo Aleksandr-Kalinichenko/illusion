@@ -506,10 +506,12 @@
 @media (max-width: 700px) {
     .content__left-headline {
         font-size: 32px;
+        width: 100%;
     }
 
     .content__left-headline span {
         font-size: 32px;
+        display: block;
     }
 }
 
@@ -553,7 +555,6 @@
         left: 95px!important;
     }
     .content__left-headline {
-        width: 300px;
         font-size: 38px;
     }
     .page__cell-aboutus {
@@ -660,11 +661,11 @@
     }
 
     .content__left-headline {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .content__left-headline span {
-        font-size: 17px;
+        font-size: 18px;
     }
     .section5__card.swiper-container {
         width: 85%;
@@ -685,7 +686,7 @@
         justify-content: space-between;
     }
     .header__logo {
-        width: 105px;
+        width: 55px;
     }
     .raiting-icone:before,
     .spacial-raiting:before{
@@ -837,11 +838,11 @@
 
 @media (max-width: 375px) {
     .content__left-headline {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .content__left-headline span {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
