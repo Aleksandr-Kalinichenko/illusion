@@ -2,6 +2,9 @@
     .aboutus__left-text {
         line-height: 1.6;
     }
+    .nice-select {
+        padding-left: 20px;
+    }
 }
 
 @media (max-height: 440px) {
@@ -791,9 +794,6 @@
     }
     .section5__card.swiper-container {
         width: 100%;
-    }
-    .nice-select {
-        padding-left: 20px;
     }
 }
 
