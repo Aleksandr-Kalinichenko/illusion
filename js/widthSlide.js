@@ -74,6 +74,12 @@ function setWidthHeightSlides() {
                 item.style.marginRight = marginForSliderItem + 5.1 + "px";
             } else if (document.documentElement.clientWidth > 460 && document.documentElement.clientWidth <= 500) {
                 item.style.marginRight = marginForSliderItem + 5 + "px";
+            } else if (document.documentElement.clientWidth === 420) {
+                item.style.minWidth = "350px";
+                item.style.maxWidth = "350px";
+                item.style.height = "300px";
+                item.style.marginLeft = "15px";
+                item.style.marginRight = "15px";
             } else {
                 item.style.marginRight = marginForSliderItem + "px";
             }

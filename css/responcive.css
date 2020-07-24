@@ -735,10 +735,12 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
     .slick-list {
         width: 100%;
     }
+}
+@media (max-width: 450px) {
     .slick-prev {
         left: 8%;
     }
