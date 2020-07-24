@@ -2,9 +2,6 @@
     .aboutus__left-text {
         line-height: 1.6;
     }
-    .nice-select {
-        padding-left: 20px;
-    }
 }
 
 @media (max-height: 440px) {
@@ -673,6 +670,10 @@
     .section5__card.swiper-container {
         width: 85%;
     }
+
+    .nice-select {
+        padding-left: 20px;
+    }
 }
 
 @media (max-width: 449px) {
@@ -795,6 +796,8 @@
     .section5__card.swiper-container {
         width: 100%;
     }
+
+
 }
 
 @media (max-width: 385px) {
