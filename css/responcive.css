@@ -661,11 +661,11 @@
     }
 
     .content__left-headline {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .content__left-headline span {
-        font-size: 18px;
+        font-size: 19px;
     }
     .section5__card.swiper-container {
         width: 85%;
@@ -852,11 +852,11 @@
 
 @media (max-width: 375px) {
     .content__left-headline {
-        font-size: 14px;
+        font-size: 14.5px;
     }
 
     .content__left-headline span {
-        font-size: 14px;
+        font-size: 14.5px;
     }
 }
 
