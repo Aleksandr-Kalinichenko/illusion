@@ -792,6 +792,9 @@
     .section5__card.swiper-container {
         width: 100%;
     }
+    .nice-select {
+        padding-left: 20px;
+    }
 }
 
 @media (max-width: 385px) {
