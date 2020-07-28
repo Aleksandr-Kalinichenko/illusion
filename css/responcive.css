@@ -796,14 +796,6 @@
     .section5__card.swiper-container {
         width: 100%;
     }
-
-    .block__img img.img {
-        width: inherit;
-    }
-
-    .block__img img.img.smallImg {
-        width: 100%;
-    }
 }
 
 @media (max-width: 385px) {
