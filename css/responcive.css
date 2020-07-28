@@ -798,10 +798,6 @@
     }
 
     .block__img img.img {
-        width: inherit;
-    }
-
-    .block__img img.img.smallImg {
         width: 100%;
     }
 }

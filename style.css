@@ -416,9 +416,6 @@ a{
     display: none;
     overflow: scroll !important;
 }
-.block__img img.img {
-    height: 100%;
-}
 
 .aboutus__left{
     width: 48%;
