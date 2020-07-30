@@ -112,6 +112,12 @@
     }
 }
 
+@media (max-width: 1185px) {
+    .section5__card-item {
+        width: 28rem;
+    }
+}
+
 @media screen and (max-width:1130px) {
     html {
         font-size: 60%;
@@ -187,9 +193,6 @@
     .block1__right-link{
         margin-top: 25px;
     }*/
-    .section5__card-item {
-        width: 31rem;
-    }
 }
 @media (max-width: 1020px) {
     .section5__card-item {
