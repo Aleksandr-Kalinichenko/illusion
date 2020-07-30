@@ -92,6 +92,9 @@
 }
 
 @media screen and (max-width: 1202px){
+    .card-logo {
+        height: 50px;
+    }
     .section5__card.vDesktop {
         height: 44rem;
     }
