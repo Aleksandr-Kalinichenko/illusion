@@ -112,6 +112,12 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .aboutus__right {
+        height: 44.7485rem;
+    }
+}
+
 @media (max-width: 1185px) {
     .section5__card-item {
         width: 28rem;
