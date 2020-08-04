@@ -981,6 +981,9 @@ li.slick-active {
     transition: 0.3s;
     z-index: 10;
 }
+.section5__card-item-link.white a {
+    color: #fff;
+}
 .section5__card-item-link a{
     cursor: pointer;
     color: #fa0000;
