@@ -213,6 +213,9 @@
     .section5__card-item {
         width: 28rem;
     }
+    .contact__item-img picture .img {
+        min-width: initial;
+    }
 }
 
 /***********************************/

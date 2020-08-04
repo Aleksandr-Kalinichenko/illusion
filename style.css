@@ -1418,6 +1418,10 @@ footer{
     margin-right: 1rem;
 }
 
+.contact__item-img picture .img {
+    min-width: 38px;
+}
+
 .contact__item-text,
 .mobile-phone,
 .decktop-phone{
