@@ -986,7 +986,8 @@ li.slick-active {
 }
 .section5__card-item-link a{
     cursor: pointer;
-    color: #fa0000;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 1);
 }
 .section5__card-item-link:hover{
     -webkit-transform: scale(1.2);
