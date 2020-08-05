@@ -1174,9 +1174,28 @@ li.slick-active {
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
+.section__info-block1.column {
+    flex-direction: column;
+}
+.section__info-subBlock1 {
+    display: flex;
+    justify-content: space-between;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.section__info-subBlock1:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+.section__info-subBlock1 .block1__right {
+    max-height: 195px;
+    overflow-y: auto;
+}
 .block1__left{
     position: relative;
     width: 47%;
+}
+.block1__left.block4.bigRight {
+    width: 100%;
 }
 .block1__right-headline{
     font-family: 'Montserrat', sans-serif;
