@@ -987,7 +987,9 @@ li.slick-active {
 .section5__card-item-link a{
     cursor: pointer;
     color: #fff;
-    text-shadow: -4px 4px 3px rgba(0,0,0,1);
+    background: rgba(50, 49, 49, 0.3);
+    border-radius: 2px;
+    padding: 5px;
 }
 .section5__card-item-link:hover{
     -webkit-transform: scale(1.2);
@@ -1182,7 +1184,6 @@ li.slick-active {
     display: flex;
     justify-content: space-between;
     max-height: 200px;
-    overflow-y: auto;
 }
 .section__info-subBlock1:nth-of-type(1) {
     margin-bottom: 20px;
@@ -1194,6 +1195,8 @@ li.slick-active {
 .block1__left{
     position: relative;
     width: 47%;
+    height: 193px;
+    overflow-y: auto;
 }
 .block1__left.block4.bigRight {
     width: 100%;
@@ -1366,6 +1369,7 @@ li.slick-active {
 }
 .block__left-text{
     width: 47%;
+    overflow-y: auto;
 }
 .block4-link{
     margin-top: 3.3rem;
