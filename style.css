@@ -1479,6 +1479,9 @@ footer{
     line-height: 1.222;
     letter-spacing: .1em;
 }
+.open__item-text:nth-of-type(2) {
+    width: 137px;
+}
 .open__item-text1{
     font-size: .75rem;
     line-height: 1.222;
