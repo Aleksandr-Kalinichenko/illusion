@@ -1196,6 +1196,9 @@ li.slick-active {
     height: 193px;
     overflow-y: auto;
 }
+.linkMore {
+    cursor: pointer;
+}
 .block1__left.block4.bigRight {
     width: 100%;
 }
@@ -1246,6 +1249,8 @@ li.slick-active {
 }
 .block21__right{
     width: 47%;
+    max-height: 195px;
+    overflow-y: auto;
 }
 .block1__right-link{
     font-size: 1.2rem;

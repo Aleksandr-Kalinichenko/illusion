@@ -1,5 +1,3 @@
-
-
 // открыть по кнопке
 $('.js-button1').click(function() {
 
@@ -665,4 +663,195 @@ $(function() {
                     window.setTimeout(i, 1e3 / 60)
                 }, o()
         }()
+});
+
+//Toggle city
+$(document).ready(function () {
+    AOS.init({
+        once: true,
+        duration: 1300
+    });
+    setTimeout(function () {
+        const
+            currentNiceSelect = document.querySelector(".nice-select .current"),
+            niceSelect = document.querySelector(".nice-select");
+
+        const
+            oldOpen = document.createElement("div"),
+            newOpen = document.createElement("div"),
+            oldContactItem = document.createElement("div"),
+            newContactItem = document.createElement("div"),
+            oldMapParent = document.createElement("div"),
+            newMapParent = document.createElement("div");
+
+        oldOpen.classList.add("open");
+        newOpen.classList.add("open");
+
+        oldContactItem.classList.add("contact__item-text1");
+        newContactItem.classList.add("contact__item-text1");
+
+        oldMapParent.classList.add("map");
+        newMapParent.classList.add("map");
+        oldMapParent.setAttribute("id", "parentMap");
+        newMapParent.setAttribute("id", "parentMap");
+
+        oldOpen.innerHTML = `
+                <div class="h1">Hours open 365 days</div>
+                <div class="open__item">
+                    <div class="open__item-text">Monday:</div>
+                    <div class="open__item-text">10 am – 10 pm</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text">Tuesday:</div>
+                    <div class="open__item-text">10 am – 11 pm</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text">Wednesdaу:</div>
+                    <div class="open__item-text">10 am – 11 pm</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text">Thursday:</div>
+                    <div class="open__item-text">10 am – 11 pm</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text">Friday: </div>
+                    <div class="open__item-text">10 am – 01 am</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text">Saturday:</div>
+                    <div class="open__item-text">10 am – 01 am</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text">Sunday:</div>
+                    <div class="open__item-text">10 am – 11 pm</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text day">Last Ticket Sold One Hour Prior to Closing</div>
+                </div>`;
+        newOpen.innerHTML = `
+                <div class="h1">Hours open 365 days</div>
+                <div class="open__item">
+                    <div class="open__item-text">Monday:</div>
+                    <div class="open__item-text">10 am – 10 rm</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text">Tuesday:</div>
+                    <div class="open__item-text">10 am – 10 rm</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text">Wednesdaу:</div>
+                    <div class="open__item-text">10 am – 10 rm</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text">Thursday:</div>
+                    <div class="open__item-text">10 am – 10 rm</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text">Friday: </div>
+                    <div class="open__item-text">10 am – 10 rm</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text">Saturday:</div>
+                    <div class="open__item-text">10 am – 10 rm</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text">Sunday:</div>
+                    <div class="open__item-text">10 am – 10 rm</div>
+                </div>
+                <div class="open__item">
+                    <div class="open__item-text day">Last Ticket Sold One Hour Prior to Closing</div>
+                </div>`;
+
+        oldContactItem.innerHTML = `<a title="click to visit map" target="_blank" class="maplink" href="https://goo.gl/maps/tymxCCCDFqL2">St. Augustine, FL 32084</a>`;
+        newContactItem.innerHTML = `<a title="click to visit map" target="_blank" class=block22__right-link"maplink" href="https://goo.gl/maps/4gJZzS48vH7bPs9s5">100 Saint George street, St. Augustine, Florida</a>`;
+
+        oldMapParent.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.6332361804293!2d-87.62767486487378!3d41.87923682399129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca33f58ffd1%3A0xf06bc2d1f0d09729!2zMjExIFMgU3RhdGUgU3QsIENoaWNhZ28sIElMIDYwNjA0LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1555176889706!5m2!1sru!2sua" width="100%" height="340" frameborder="0" style="border:0;max-width:100%" allowfullscreen></iframe>`;
+        newMapParent.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.9461479293295!2d-81.31547958492514!3d29.894652282588197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e42795ef01c2bd%3A0x8753e82fcf3752db!2zMTAwIFN0IEdlb3JnZSBTdCwgU3QuIEF1Z3VzdGluZSwgRkwgMzIwODQsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1596539385660!5m2!1suk!2sua" width="100%" height="340" frameborder="0" style="border:0;max-width:100%" allowfullscreen></iframe>`;
+
+        niceSelect.onclick = function () {
+            const
+                parentContact = document.querySelector(".contact"),
+                currentItemAddress = document.querySelector(".contact .contact-us .contact__item.address .contact__item-text1"),
+                parentElementItemAdress = currentItemAddress.parentNode,
+                currentOpen = document.querySelector(".contact .open"),
+                parentParentMap = document.querySelector(".cell__line-footer"),
+                parentMap = document.querySelector("#parentMap");
+
+            setTimeout(() => {
+                if (currentNiceSelect.innerText === "St Augustine") {
+                    parentContact.removeChild(currentOpen);
+                    parentContact.appendChild(newOpen);
+
+                    parentElementItemAdress.removeChild(currentItemAddress);
+                    parentElementItemAdress.appendChild(newContactItem);
+
+                    parentParentMap.removeChild(parentMap);
+                    parentParentMap.appendChild(newMapParent);
+
+                } else if (currentNiceSelect.innerText === "Chicago") {
+                    parentContact.removeChild(currentOpen);
+                    parentContact.appendChild(oldOpen);
+
+                    parentElementItemAdress.removeChild(currentItemAddress);
+                    parentElementItemAdress.appendChild(oldContactItem);
+
+                    parentParentMap.removeChild(parentMap);
+                    parentParentMap.appendChild(oldMapParent);
+                }
+            }, 50);
+        }
+    }, 100);
+});
+
+var swiper = new Swiper('.swiper-container', {
+    effect: 'slide',
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }/*,
+        autoplay: {
+            delay: 3000,
+        }*/
+});
+
+$(document).ready(function() {
+    $('select').niceSelect();
+});
+$('#right img').click(function(){
+    $('video').toggleClass('visibility-video');
+    $('video').trigger('play');
+    $(".tooltip-img").toggleClass('visibility-video');
+    $('.img-replace').toggleClass('visibility-video');
+});
+
+$('#right video').click(function(){
+
+    $(".tooltip-img").toggleClass('visibility-video');
+    $('.img-replace').toggleClass('visibility-video');
+
+
+    $('video').toggleClass('visibility-video');
+});
+$(window).scroll(function(event){
+    if($(this).scrollTop() > 5200){
+        $('#wave3_down').css('height','55px');
+        $('#wave2_down').css('height','55px');
+        $('#wave1_down').css('height','55px');
+    }
+    if($(this).scrollTop() < 5200){
+        $('#wave3_down').css('height','100px');
+        $('#wave2_down').css('height','100px');
+        $('#wave1_down').css('height','100px');
+
+    }
+});
+
+//Click more
+const allMoreLink = document.querySelectorAll(".linkMore");
+
+allMoreLink.forEach(item => {
+    item.addEventListener("click", function () {
+        const itemText = item.parentElement.parentElement.querySelector(".block1__right-text");
+        itemText.innerText = itemText.innerText + "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur at cum cupiditate dolor, ea eius id ipsa iste, iusto libero maiores modi necessitatibus, obcaecati saepe sapiente suscipit temporibus ullam vitae voluptate! A consectetur corporis delectus dolores doloribus enim, esse est eveniet excepturi exercitationem expedita facilis hic id illum itaque iure laboriosam maxime nobis nulla odit omnis pariatur perferendis perspiciatis porro provident quis quisquam repellat repudiandae sapiente sed sequi soluta suscipit tempore ullam velit veritatis vitae? Debitis deserunt dicta dolore impedit iusto labore laudantium necessitatibus nemo officia perspiciatis placeat, praesentium saepe ullam veniam voluptate voluptatem voluptatum. Animi at autem deserunt dolorem dolores, eligendi eos eum ex iste iusto laboriosam maiores nisi nostrum odio, officia placeat porro quidem quod rerum sequi similique, soluta suscipit tempora temporibus velit veniam vero voluptatem? Architecto beatae dolores magnam maiores nemo possimus quo. Alias autem cupiditate eveniet exercitationem fugiat ipsam non, praesentium quibusdam ratione recusandae rem saepe sapiente totam unde vel! Ab accusantium ad atque autem consequuntur corporis deleniti ducimus ea eius eligendi eos error eveniet fugit, iste iure labore laboriosam laudantium magni maiores minus molestiae mollitia nemo nesciunt numquam quae, quaerat quas quasi quia ratione recusandae repellat repellendus repudiandae sequi, suscipit tempora tempore voluptates! Architecto.";
+    });
 });
