@@ -669,7 +669,8 @@ $(function() {
 $(document).ready(function () {
     AOS.init({
         once: true,
-        duration: 1300
+        duration: 1500,
+        offset: 450
     });
     setTimeout(function () {
         const
