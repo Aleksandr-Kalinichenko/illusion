@@ -152,6 +152,7 @@ a{
 }
 .content__right-img{
     width: 100%;
+    font-size: 0;
 }
 .button {
     position: relative;
